@@ -29,27 +29,32 @@ namespace EjercicioFinalBucleC.Servicios
                     if (mes == 2 & año % 4 != 0)
                     {
                         Console.WriteLine("Este año no es bisiesto y el mes es Febrero, lo cual tiene 28 dias");
-                        Console.WriteLine("Y el año se trata de:" + año+"\n");
+                        Console.WriteLine("Y el año se trata de:" + año + "\n");
                     }
                     else
                     {
-                        if(mes==2 & año % 100 != 0)
+                        if (mes == 2 & año % 100 != 0)
                         {
                             Console.WriteLine("Este año es bisiesto y el mes es Febrero, lo cual tiene 29 dias");
                             Console.WriteLine("Y el año se trata de:" + año + "\n");
                         }
                         else
                         {
-                            if(mes==2 & año % 400 != 0)
+                            if (mes == 2 & año % 400 != 0)
                             {
                                 Console.WriteLine("Este año no es bisiesto y el mes es Febrero, lo cual tiene 28 dias");
                                 Console.WriteLine("Y el año se trata de:" + año + "\n");
                             }
                             else
                             {
-                                Console.WriteLine("Este año es bisiesto y el mes es Febrero, lo cual tiene 29 dias");
-                                Console.WriteLine("Y el año se trata de:" + año + "\n");
-                            }  if (mes == 3)
+                                if (mes == 2 & año % 400 == 0)
+                                {
+                                    Console.WriteLine("Este año es bisiesto y el mes es Febrero, lo cual tiene 29 dias");
+                                    Console.WriteLine("Y el año se trata de:" + año + "\n");
+                                }
+                                else
+                                {
+                                    if (mes == 3)
                                     {
                                         Console.WriteLine("Este mes se trata de Marzo y tiene 31 dias ");
                                         Console.WriteLine("Y el año se trata de:" + año + "\n");
@@ -135,10 +140,13 @@ namespace EjercicioFinalBucleC.Servicios
                                         }
                                     }
                                 }
+
+                               
                             }
                         }
-                    
-                  
+                    }
+
+                }
                 
 
                  Console.WriteLine("¿Quieres continuar?Elija la opcion s(si quieres avanzar)/n(si no quieres avanzar)");
