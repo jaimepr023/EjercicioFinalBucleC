@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace EjercicioFinalBucleC.Servicios
 {
+    /// <summary>
+    /// Implementacion de la interfaz PedirInterfaz
+    /// <author>jpr-61123</author>
+    /// </summary>
     internal class PedirImplementacion : PedirInterfaz
     {
         public int año( int año)

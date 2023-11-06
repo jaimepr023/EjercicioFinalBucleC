@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace EjercicioFinalBucleC.Servicios
 {
+    /// <summary>
+    /// Implementtacionde la interfaz OperacionInterfaz
+    /// <author>jpr-61123</author>
+    /// </summary>
     internal class OperacionImplementacion : OperacionInterfaz
     {
         private int años, meses;
