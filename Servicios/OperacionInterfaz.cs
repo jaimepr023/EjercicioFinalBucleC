@@ -16,6 +16,15 @@ namespace EjercicioFinalBucleC.Servicios
         /// Metodo que hace la operacion de los dias que tiene un mes
         /// <author>jpr-301023</author>
         /// </summary>
-        public void operacion();
+        /// <param name="mes"></param>
+        /// <param name="año"></param>
+        public void operacion(int mes, int año);
+
+        /// <summary>
+        /// Metodo que realiza la condicion del bucle
+        /// <author>jpr-71123</author>
+        /// </summary>
+        /// <returns>devuelve la condicion que nosotro le demos</returns>
+        public string pedirCondicion();
     }
 }

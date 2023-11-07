@@ -15,8 +15,19 @@ namespace EjercicioFinalBucleC.Controladores
         /// <param name="args"></param>
         static void Main(string[] args)
         {
+            PedirInterfaz pi = new PedirImplementacion();
             OperacionInterfaz oi = new OperacionImplementacion();
-            oi.operacion();
+
+            string afirmacion;
+            do
+            {
+                int año = pi.año();
+                int mes = pi.mes();
+                oi.operacion(mes, año);
+                afirmacion = oi.pedirCondicion();
+            } 
+            while (afirmacion=="s");
+
         }
     }
 }

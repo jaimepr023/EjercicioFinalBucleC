@@ -14,17 +14,15 @@ namespace EjercicioFinalBucleC.Servicios
     {
         /// <summary>
         /// Metodo que pide por pantalla el mes y lo guarda
-        /// <author>jpr-301023</author>
+        /// <author>jpr-71123</author>
         /// </summary>
-        /// <param name="mes"></param>
-        /// <returns>int</returns>
-        public int mes(int mes);
+        /// <returns>el numero de mes</returns>
+        public int mes();
         /// <summary>
-        /// Metodo que pide por pantalla el año y lo guarda
-        /// <author>jpr-301023</author>
+        ///  /// Metodo que pide por pantalla el año y lo guarda
+        /// <author>jpr-71123</author>
         /// </summary>
-        /// <param name="año"></param>
-        /// <returns>int</returns>
-        public int año(int año);
+        /// <returns>el numero de año</returns>
+        public int año();
     }
 }

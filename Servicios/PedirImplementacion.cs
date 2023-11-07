@@ -12,17 +12,18 @@ namespace EjercicioFinalBucleC.Servicios
     /// </summary>
     internal class PedirImplementacion : PedirInterfaz
     {
-        public int año( int año)
+        public int año()
         {
+            
             Console.WriteLine("Dime el año que usted quiera:");
-            año = Int32.Parse(Console.ReadLine());
+           int año = Int32.Parse(Console.ReadLine());
             return año;
         }
 
-        public int mes(int mes)
+        public int mes()
         {
             Console.WriteLine("Dime el mes que quieras sbr los dias que tienes:");
-            mes = Int32.Parse(Console.ReadLine());
+           int mes = Int32.Parse(Console.ReadLine());
             return mes;
         }
     }
